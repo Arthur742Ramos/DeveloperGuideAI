@@ -1,6 +1,6 @@
 # The Developer's Guide to AI - Companion Repository
 
-Practical resources for AI-assisted software development: prompt templates, CLI wrappers, MCP server examples, and more.
+Companion resources for [The Developer's Guide to AI: Patterns, Tools, and Workflows](https://github.com/Arthur742Ramos/AIBook).
 
 ## What's Here
 
@@ -77,7 +77,7 @@ npm run build
 
 ### [`prompts/`](./prompts/)
 
-Prompt templates organized by topic:
+Prompt templates organized by book part and chapter:
 
 | Part | Focus | Key Templates |
 |------|-------|---------------|
@@ -117,7 +117,7 @@ Model Context Protocol server examples:
 Practice materials:
 
 - `code-samples/` - Code to practice reviewing, explaining, testing
-- `exercise-data/` - Sample data for practicing prompts
+- `exercise-data/` - Data for book exercises
 - `conversations/` - Example AI conversation transcripts
 
 ### [`resources/`](./resources/)
@@ -126,7 +126,7 @@ Curated links to documentation, papers, and tools.
 
 ## Usage Philosophy
 
-These resources are **starting points, not solutions**. Key principles:
+These resources are **starting points, not solutions**. The book emphasizes:
 
 1. **Customize for your context** - Edit templates to match your stack, conventions, and constraints
 2. **Verify AI outputs** - Templates include verification steps; do not skip them
@@ -150,6 +150,11 @@ MIT License - see [LICENSE](./LICENSE)
 
 ## Links
 
+- [The Book (LaTeX source)](https://github.com/Arthur742Ramos/AIBook)
 - [Model Context Protocol](https://modelcontextprotocol.io)
 - [Claude Code Documentation](https://docs.anthropic.com/claude-code)
 - [GitHub Copilot Documentation](https://docs.github.com/copilot)
+
+---
+
+*Companion to "The Developer's Guide to AI: Patterns, Tools, and Workflows"*

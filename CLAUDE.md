@@ -1,25 +1,25 @@
-# DeveloperGuideAI
+# DeveloperGuideAI Companion Repository
 
-Practical resources for AI-assisted software development.
+Companion materials for "The Developer's Guide to AI: Patterns, Tools, and Workflows."
 
 ## Purpose
 
-This repository provides:
-- Prompt templates developers can copy and adapt
-- Working code examples for practice
-- Reference implementations of effective patterns
+This repository provides practical resources for the book:
+- Prompt templates readers can copy and adapt
+- Working code examples for exercises
+- Reference implementations of patterns from the text
 
-Everything here should be **immediately usable** by developers working with AI coding tools.
+Everything here should be **immediately usable** by a developer who just read a chapter.
 
 ## Structure
 
 ```
-prompts/          # Prompt templates organized by topic
-  part1-mindset/  # Foundations and mental models
-  part2-patterns/ # Core prompting patterns
-  part3-workflows/# Practical development workflows
-  part4-beyond/   # Safety and evaluation
-  part5-tools/    # Tool-specific guidance
+prompts/          # Prompt templates organized by book part
+  part1-mindset/  # Chapters 1-4: Foundations
+  part2-patterns/ # Chapters 5-8: Core patterns
+  part3-workflows/# Chapters 9-13: Practical workflows
+  part4-beyond/   # Chapters 14-16: Safety and evaluation
+  part5-tools/    # Chapters 17-21: Tool-specific guidance
 
 scripts/          # CLI wrappers that use the prompts
 examples/         # Code for exercises (buggy code, review targets, data)
@@ -71,7 +71,7 @@ Common placeholders:
 ## Do Not
 
 - Add real API keys, tokens, or credentials (even "fake" ones that look real)
-- Include overly verbose explanations (keep templates concise)
+- Include content that duplicates the book verbatim
 - Create prompts without clear placeholders
 - Add examples without solutions
 - Use external dependencies in scripts without documenting them
@@ -80,12 +80,12 @@ Common placeholders:
 
 ### Adding a new prompt template
 
-1. Identify the topic area it supports
+1. Identify the book chapter it supports
 2. Create file in appropriate `prompts/partN-*/` directory
 3. Include header comment with:
+   - Chapter reference
    - When to use this prompt
    - Required placeholders
-   - Expected output format
 4. Add entry to `prompts/README.md` index
 
 Pattern to follow: `prompts/part2-patterns/code-review.md`
@@ -132,17 +132,21 @@ shellcheck scripts/*.sh
 git diff --cached | grep -iE "(sk_live|api_key|password|secret)" && echo "SECRETS FOUND"
 ```
 
-## Repository Structure
+## Book Alignment
 
-| Part | Focus | Location |
-|------|-------|----------|
-| Part 1 | Mindset & Foundations | `prompts/part1-mindset/` |
-| Part 2 | Prompting Patterns | `prompts/part2-patterns/` |
-| Part 3 | Practical Workflows | `prompts/part3-workflows/` |
-| Part 4 | Safety & Evaluation | `prompts/part4-beyond/` |
-| Part 5 | Tool-Specific | `prompts/part5-tools/`, `mcp/`, `instruction-files/` |
+This repository tracks the book's structure. When adding content:
+
+| Book Part | Chapters | Repository Location |
+|-----------|----------|---------------------|
+| Part I: The Right Mindset | 1-4 | `prompts/part1-mindset/` |
+| Part II: Prompting Patterns | 5-8 | `prompts/part2-patterns/` |
+| Part III: Practical Workflows | 9-13 | `prompts/part3-workflows/` |
+| Part IV: Beyond Code | 14-16 | `prompts/part4-beyond/` |
+| Part V: Tools | 17-21 | `prompts/part5-tools/`, `mcp/`, `instruction-files/` |
 
 ## Design Principles
+
+From the book itself:
 
 1. **Prompts are contracts**: Every template clearly specifies role, task, constraints
 2. **Verify outputs**: Examples include test cases that reveal bugs
