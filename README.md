@@ -1,6 +1,6 @@
 # The Developer's Guide to AI - Companion Repository
 
-Companion resources for [The Developer's Guide to AI: Patterns, Tools, and Workflows](https://github.com/Arthur742Ramos/AIBook).
+Companion resources for "The Developer's Guide to AI: Patterns, Tools, and Workflows."
 
 ## What's Here
 
@@ -150,7 +150,6 @@ MIT License - see [LICENSE](./LICENSE)
 
 ## Links
 
-- [The Book (LaTeX source)](https://github.com/Arthur742Ramos/AIBook)
 - [Model Context Protocol](https://modelcontextprotocol.io)
 - [Claude Code Documentation](https://docs.anthropic.com/claude-code)
 - [GitHub Copilot Documentation](https://docs.github.com/copilot)
