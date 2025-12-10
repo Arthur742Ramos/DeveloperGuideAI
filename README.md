@@ -6,13 +6,28 @@ Companion resources for "The Developer's Guide to AI: Patterns, Tools, and Workf
 
 ```
 DeveloperGuideAI/
-├── prompts/              # Ready-to-use prompt templates by chapter
+├── docs/                 # Consolidated reference docs (start here)
+├── prompts/              # Individual prompt templates by topic
 ├── scripts/              # CLI wrappers for common AI tasks
-├── instruction-files/    # CLAUDE.md, AGENTS.md, copilot-instructions templates
+├── instruction-files/    # CLAUDE.md, AGENTS.md templates
 ├── mcp/                  # MCP server examples (Python, TypeScript)
 ├── examples/             # Code samples and exercise data
 └── resources/            # Curated links and further reading
 ```
+
+## Consolidated References (For AI Agents)
+
+The [`docs/`](./docs/) directory contains single-file reference documents optimized for AI agent consumption:
+
+| Document | What It Contains |
+|----------|------------------|
+| [QUICK_REFERENCE.md](./docs/QUICK_REFERENCE.md) | One-page cheat sheet for daily use |
+| [ALL_PROMPTS.md](./docs/ALL_PROMPTS.md) | Every prompt template in one file |
+| [GITHUB_COPILOT_COMPLETE.md](./docs/GITHUB_COPILOT_COMPLETE.md) | Full GitHub Copilot guide |
+| [CLAUDE_CODE_COMPLETE.md](./docs/CLAUDE_CODE_COMPLETE.md) | Full Claude Code guide |
+| [CODEX_CLI_COMPLETE.md](./docs/CODEX_CLI_COMPLETE.md) | Full OpenAI Codex CLI guide |
+
+These files are self-contained. Each can be read in one pass without cross-references.
 
 ## Quick Start
 
