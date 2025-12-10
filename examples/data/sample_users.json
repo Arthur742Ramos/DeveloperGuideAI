@@ -1,0 +1,88 @@
+{
+  "_comment": "Synthetic user data for anonymization practice. This is FAKE data - do not use as real PII.",
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Alice",
+      "last_name": "Johnson",
+      "email": "alice.johnson@example.com",
+      "phone": "+1-555-123-4567",
+      "ssn": "123-45-6789",
+      "date_of_birth": "1985-03-15",
+      "address": {
+        "street": "123 Main Street",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "62701"
+      },
+      "credit_card": {
+        "number": "4111-1111-1111-1111",
+        "expiry": "12/25",
+        "cvv": "123"
+      },
+      "account_balance": 1500.00,
+      "created_at": "2023-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "first_name": "Bob",
+      "last_name": "Smith",
+      "email": "bob.smith@company.org",
+      "phone": "+1-555-987-6543",
+      "ssn": "987-65-4321",
+      "date_of_birth": "1990-07-22",
+      "address": {
+        "street": "456 Oak Avenue, Apt 7B",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97201"
+      },
+      "credit_card": {
+        "number": "5500-0000-0000-0004",
+        "expiry": "06/26",
+        "cvv": "456"
+      },
+      "account_balance": 3200.50,
+      "created_at": "2023-03-20T14:15:00Z"
+    },
+    {
+      "id": 3,
+      "first_name": "Carol",
+      "last_name": "Williams",
+      "email": "carol.w@email.net",
+      "phone": "+1-555-456-7890",
+      "ssn": "456-78-9012",
+      "date_of_birth": "1978-11-08",
+      "address": {
+        "street": "789 Pine Road",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "78701"
+      },
+      "credit_card": {
+        "number": "3782-822463-10005",
+        "expiry": "09/24",
+        "cvv": "7890"
+      },
+      "account_balance": 850.25,
+      "created_at": "2022-11-05T09:45:00Z"
+    }
+  ],
+  "exercise_instructions": {
+    "task": "Anonymize this data before using it in an AI prompt",
+    "fields_to_anonymize": [
+      "names (replace with generic: User1, User2)",
+      "email (replace domain with example.com)",
+      "phone (mask: +1-555-XXX-XXXX)",
+      "ssn (remove entirely or mask: XXX-XX-XXXX)",
+      "address (generalize to city/state only)",
+      "credit_card (remove entirely)",
+      "date_of_birth (generalize to year or age range)"
+    ],
+    "fields_safe_to_keep": [
+      "id",
+      "account_balance",
+      "created_at (if timestamp isn't identifying)"
+    ]
+  }
+}

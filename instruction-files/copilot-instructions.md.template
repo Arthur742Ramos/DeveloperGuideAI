@@ -1,0 +1,111 @@
+# GitHub Copilot Instructions for [PROJECT_NAME]
+
+## Project Overview
+
+[PROJECT_NAME] is a [brief description]. It uses [primary language/framework].
+
+## Code Style
+
+- Language: [TypeScript/Python/etc.]
+- Style guide: [reference, e.g., "Airbnb JavaScript Style Guide"]
+- Formatting: [Prettier/Black/etc.] with config in `[config file]`
+
+### Naming Conventions
+- Variables: [camelCase/snake_case]
+- Functions: [camelCase/snake_case]
+- Classes: [PascalCase]
+- Files: [kebab-case/snake_case]
+- Constants: [UPPER_SNAKE_CASE]
+
+### Import Order
+1. [Standard library / Node built-ins]
+2. [External packages]
+3. [Internal modules]
+4. [Relative imports]
+
+## Architecture Patterns
+
+### [Primary Pattern, e.g., "Component Structure"]
+```[language]
+// Example of preferred pattern
+[CODE_EXAMPLE]
+```
+
+### [Secondary Pattern, e.g., "Service Layer"]
+```[language]
+// Example of preferred pattern
+[CODE_EXAMPLE]
+```
+
+## Testing Preferences
+
+- Framework: [Jest/Pytest/etc.]
+- Style: [Arrange-Act-Assert / Given-When-Then]
+- Mocking: [preferred mocking library]
+
+When generating tests:
+- Use descriptive test names: `should [action] when [condition]`
+- Include edge cases for: null/undefined, empty arrays, boundary values
+- Mock external dependencies, not internal logic
+
+## Error Handling
+
+```[language]
+// Preferred error handling pattern
+[ERROR_HANDLING_EXAMPLE]
+```
+
+## Documentation
+
+- Use [JSDoc/docstrings/etc.] for public APIs
+- Keep comments minimal; prefer self-documenting code
+- Document "why" not "what"
+
+## Forbidden Patterns
+
+Do not suggest:
+- [Pattern 1, e.g., "any type in TypeScript"]
+- [Pattern 2, e.g., "console.log for error handling"]
+- [Pattern 3, e.g., "inline SQL queries"]
+
+## Project-Specific Context
+
+### Key Types
+```[language]
+// Important types to know about
+[TYPE_DEFINITIONS]
+```
+
+### Common Utilities
+- `[utilName]` in `[path]`: [what it does]
+- `[utilName]` in `[path]`: [what it does]
+
+### External APIs
+This project integrates with:
+- [API 1]: [brief description]
+- [API 2]: [brief description]
+
+## Framework-Specific Notes
+
+### [Framework Name, e.g., "React"]
+- [Preference 1, e.g., "Use functional components with hooks"]
+- [Preference 2, e.g., "Prefer composition over inheritance"]
+
+### [Framework Name, e.g., "Express"]
+- [Preference 1]
+- [Preference 2]
+
+---
+
+## Customization Checklist
+
+After copying this template:
+
+- [ ] Replace `[PROJECT_NAME]` and `[BRACKETS]`
+- [ ] Add real code examples for patterns
+- [ ] Include your actual type definitions
+- [ ] List your real external APIs
+- [ ] Remove framework sections that don't apply
+- [ ] Keep total length reasonable (Copilot context is limited)
+
+Place this file at `.github/copilot-instructions.md`

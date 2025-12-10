@@ -1,0 +1,101 @@
+# [PROJECT_NAME]
+
+[One-line project description]
+
+## Commands
+
+```
+build: [BUILD_COMMAND]
+test: [TEST_COMMAND]
+lint: [LINT_COMMAND]
+dev: [DEV_COMMAND]
+```
+
+## Structure
+
+```
+[PROJECT_ROOT]/
+├── src/           # [description]
+├── tests/         # [description]
+├── [dir]/         # [description]
+└── [dir]/         # [description]
+```
+
+## Rules
+
+### Always
+- [Rule 1, e.g., "Run tests before committing"]
+- [Rule 2, e.g., "Use TypeScript strict mode"]
+- [Rule 3, e.g., "Handle errors explicitly"]
+
+### Never
+- Modify `[GENERATED_PATH]` (auto-generated)
+- Commit secrets or `.env` files
+- [Other constraint]
+
+## Patterns
+
+### [Pattern Name, e.g., "Services"]
+Location: `src/services/`
+Example: `src/services/userService.ts`
+```[language]
+// Brief pattern example
+[CODE_SNIPPET]
+```
+
+### [Pattern Name, e.g., "API Routes"]
+Location: `src/routes/`
+Example: `src/routes/users.ts`
+```[language]
+// Brief pattern example
+[CODE_SNIPPET]
+```
+
+## Key Files
+
+| File | Purpose |
+|------|---------|
+| `[path]` | [purpose] |
+| `[path]` | [purpose] |
+| `[path]` | [purpose] |
+
+## Testing
+
+- Framework: [Jest/Pytest/etc.]
+- Location: `tests/` mirrors `src/`
+- Naming: `*.test.[ext]` or `test_*.py`
+- Run: `[TEST_COMMAND]`
+
+Coverage requirements: [percentage or "none"]
+
+## Common Tasks
+
+### Add new [feature type]
+1. Create `src/[location]/[name].[ext]`
+2. Follow pattern in `[example]`
+3. Add test in `tests/[location]/`
+4. [Additional steps]
+
+### [Other task]
+[Steps]
+
+## External Dependencies
+
+- [Service]: [URL/description] - [what it's for]
+- [Database]: [type] - [schema location]
+
+## Notes
+
+<!-- Project-specific gotchas and learned constraints -->
+
+---
+*Delete everything below after customizing*
+
+## Setup Instructions
+
+1. Replace all `[BRACKETS]` with actual values
+2. Add 2-3 pattern examples with real code snippets
+3. Fill in key files table
+4. Add at least one common task
+5. Remove unused sections
+6. Keep total instructions under 150

@@ -1,0 +1,36 @@
+# Sample Application Logs for Anonymization Practice
+# This is SYNTHETIC data - demonstrates PII that can appear in logs
+
+2024-01-15 10:23:45 INFO  [AuthService] User login successful: alice.johnson@example.com from IP 192.168.1.100
+2024-01-15 10:23:46 DEBUG [SessionManager] Created session for user_id=1, session_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxfQ.abc123
+2024-01-15 10:24:01 INFO  [PaymentService] Processing payment for user alice.johnson@example.com, card ending 1111
+2024-01-15 10:24:02 DEBUG [PaymentService] Stripe API call: customer=cus_ABC123, amount=99.99
+2024-01-15 10:24:03 ERROR [PaymentService] Payment failed for SSN verification: 123-45-6789
+2024-01-15 10:25:15 INFO  [UserService] Profile updated: Bob Smith (bob.smith@company.org) changed phone to +1-555-987-6543
+2024-01-15 10:26:00 WARN  [SecurityService] Failed login attempt for admin@company.com from IP 203.0.113.42
+2024-01-15 10:26:01 WARN  [SecurityService] Failed login attempt for admin@company.com from IP 203.0.113.42
+2024-01-15 10:26:02 WARN  [SecurityService] Account locked: admin@company.com after 3 failed attempts
+2024-01-15 10:30:00 INFO  [APIGateway] Request from API key sk_live_abc123xyz789 to /api/users
+2024-01-15 10:30:01 DEBUG [Database] Query executed: SELECT * FROM users WHERE email = 'carol.w@email.net'
+2024-01-15 10:31:00 ERROR [OrderService] Order failed for customer Carol Williams at 789 Pine Road, Austin, TX 78701
+2024-01-15 10:32:00 INFO  [NotificationService] SMS sent to +1-555-456-7890: "Your order has shipped"
+2024-01-15 10:33:00 DEBUG [CacheService] Cached user profile: {"name":"Alice Johnson","dob":"1985-03-15","ssn":"123-45-6789"}
+
+# Exercise: Sanitize these logs before sharing with AI for debugging help
+#
+# PII to remove/mask:
+# - Email addresses -> user@[REDACTED] or user_123@example.com
+# - IP addresses -> [IP_REDACTED] or 0.0.0.0
+# - Session tokens/API keys -> [TOKEN_REDACTED]
+# - SSN -> [SSN_REDACTED]
+# - Phone numbers -> +1-555-XXX-XXXX
+# - Physical addresses -> [ADDRESS_REDACTED]
+# - Full names -> [USER_NAME] or User123
+# - Credit card info -> [CARD_REDACTED]
+#
+# Information safe to keep:
+# - Timestamps
+# - Log levels (INFO, DEBUG, ERROR, WARN)
+# - Service names
+# - Error types and codes
+# - General flow/sequence of events

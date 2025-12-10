@@ -1,0 +1,94 @@
+# Project: [PROJECT_NAME]
+
+> [Brief one-line description of what this project does]
+
+## Quick Reference
+
+```bash
+# Build
+[BUILD_COMMAND]
+
+# Test
+[TEST_COMMAND]
+
+# Lint
+[LINT_COMMAND]
+```
+
+## Architecture
+
+[BRIEF_ARCHITECTURE_DESCRIPTION]
+
+Key directories:
+- `src/` - [what's here]
+- `tests/` - [what's here]
+- `[OTHER_DIR]/` - [what's here]
+
+## Conventions
+
+### Code Style
+- [Your primary style guide, e.g., "Follow PEP 8" or "Use Prettier defaults"]
+- [Naming convention, e.g., "snake_case for functions, PascalCase for classes"]
+- [Import ordering convention]
+
+### Patterns
+- [Your service/component pattern, e.g., "Services in src/services/ follow the repository pattern"]
+- [Error handling pattern, e.g., "Wrap external calls in try/catch, use custom AppError class"]
+- [State management pattern if applicable]
+
+### Testing
+- [Test file naming, e.g., "Tests mirror source structure: src/foo.ts -> tests/foo.test.ts"]
+- [Coverage requirements, e.g., "New code requires >80% coverage"]
+- [Test framework and assertion style]
+
+## Key Files
+
+Understanding these files first helps with most tasks:
+
+- `[PATH_TO_MAIN_ENTRY]` - Application entry point
+- `[PATH_TO_CONFIG]` - Configuration loading
+- `[PATH_TO_TYPES]` - Core type definitions
+- `[PATH_TO_UTILS]` - Shared utilities
+
+## Do Not
+
+- Modify files in `[GENERATED_DIR]/` (auto-generated)
+- Change database schema without migration
+- Commit `.env` or files matching `[SECRETS_PATTERN]`
+- [Other project-specific constraints]
+
+## Common Tasks
+
+### Adding a new [FEATURE_TYPE]
+1. Create file in `[LOCATION]`
+2. Follow pattern in `[EXAMPLE_FILE]`
+3. Register in `[REGISTRATION_LOCATION]`
+4. Add tests in `[TEST_LOCATION]`
+
+### [OTHER_COMMON_TASK]
+[Brief steps]
+
+## Dependencies
+
+External services this project talks to:
+- [SERVICE_1]: [what it's used for]
+- [SERVICE_2]: [what it's used for]
+
+## Learned Constraints
+
+<!-- Add constraints discovered through iteration -->
+<!-- Example: "Always run typecheck before committing (added after CI failures)" -->
+
+---
+
+## Customization Notes
+
+Delete this section after customizing. Replace all `[BRACKETS]` with your values.
+
+Sections to definitely fill in:
+1. Quick Reference commands
+2. Key Files paths
+3. Do Not constraints
+4. At least one Common Task
+
+Keep it under 150 instructions total for best results.
