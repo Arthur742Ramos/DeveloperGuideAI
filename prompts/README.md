@@ -1,6 +1,6 @@
 # Prompt Templates
 
-Ready-to-use prompt templates organized by book chapter. Copy, customize for your context, and use with any AI assistant.
+Ready-to-use prompt templates organized by topic. Copy, customize for your context, and use with any AI assistant.
 
 ## How to Use
 
@@ -89,7 +89,7 @@ We use Python 3.11 with FastAPI.
 Modify constraints to match your needs:
 
 ```
-# Book template:
+# Original template:
 - Maximum 500 words
 
 # Your version:

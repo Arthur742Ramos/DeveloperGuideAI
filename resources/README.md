@@ -1,6 +1,6 @@
 # Resources and Further Reading
 
-Curated links to complement "The Developer's Guide to AI."
+Curated links for AI-assisted software development.
 
 ## Official Documentation
 
@@ -63,7 +63,7 @@ Curated links to complement "The Developer's Guide to AI."
 - [The Batch (DeepLearning.AI)](https://www.deeplearning.ai/the-batch/)
 - [Import AI](https://importai.substack.com/)
 
-## Tools Mentioned in the Book
+## AI Coding Tools
 
 | Tool | Purpose | Link |
 |------|---------|------|

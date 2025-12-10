@@ -1,6 +1,6 @@
-# Contributing to Developer's Guide to AI Companion
+# Contributing to DeveloperGuideAI
 
-Thank you for your interest in contributing! This repository accompanies "The Developer's Guide to AI: Patterns, Tools, and Workflows" and benefits from community improvements.
+Thank you for your interest in contributing! This repository provides practical resources for AI-assisted development and benefits from community improvements.
 
 ## Ways to Contribute
 
@@ -57,7 +57,7 @@ Have a useful MCP server pattern? Add it to `mcp/`:
 Add to `examples/`:
 
 - Code samples for practicing AI-assisted review/explanation/testing
-- Exercise data that illustrates book concepts
+- Exercise data for practicing AI-assisted workflows
 - Example conversation transcripts showing patterns in action
 
 ### 5. Resource Links

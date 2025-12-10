@@ -52,8 +52,6 @@ Add to your `~/.claude/settings.json`:
 
 ## Tool Design Principles
 
-From Chapter 18 of the book:
-
 ### 1. Single Responsibility
 Each tool should do one thing well.
 
@@ -130,4 +128,3 @@ except DatabaseError as e:
 - [MCP Documentation](https://modelcontextprotocol.io/)
 - [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
-- Book Chapter 18: "Tools and the Model Context Protocol"
